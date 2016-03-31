@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>页面报纸排版</title>
+	<link rel="stylesheet" href="base.css">
+	<style>
+		.g-container{width:892px;margin: 0 auto;}
+		.news{height: 1386px;width: 980px;}
+
+		/*top*/
+		.m-top{height: 61px;font:12px/14px "黑体";}
+		.m-top .logo{width: 105px;background-color: #d45d5c;color: #fff;padding-left: 5px;}
+		.m-top .date{display:inline-block;color: #d45d5c;}
+		.m-top .date,.m-top .logo{height: 14px;padding-top:45px;padding-bottom: 2px;}
+		.m-top .g-container{border-bottom: 2px solid #938e8c;}
+		
+		.m-article1 .g-container{padding-top: 35px;}
+		.m-article1 .imgs{width: 641px;height: 301px;background: url(leftTopBig.png);}
+		.m-article1 .imgs .item{height: 301px;width: 191px;}
+		.m-article1 .item1{background-color: rgba(65,140,88,0.5);}
+		.m-article1 .item2{background-color: rgba(204,117,128,0.5);}
+	</style>
+</head>
+<body>
+	<div class="news">
+		<div class="m-top">
+			<div class="g-container f-cb">
+				<div class="logo f-fl">ife.baidu.com</div>
+				<span class="date f-fr">2016.03</span>
+			</div>
+		</div>
+		<div class="g-main">
+			<div class="m-article1">
+				<div class="g-container f-cb">
+					<div class="imgs f-fl f-cb">
+						<div class="item item1 f-fl"></div>
+						<div class="item item2 f-fr"></div>
+					</div>
+					<div class="head f-fr"></div>
+					<div class="contents"></div>
+				</div>
+			</div>
+		</div>
+		<div class="g-foot"></div>
+	</div>
+
+</body>
+</html>
